@@ -1,0 +1,12 @@
+@import 'assets/_colors.scss';
+
+.ui.huge.button.delete_button {
+    background-color: transparent;
+    color: $gold;
+    transition: all 0.3s linear;
+
+    &:hover, &:active, &:focus {
+        color: $red;
+        transition: all 0.3s linear;
+    }
+}

@@ -1,0 +1,19 @@
+@import "assets/_colors.scss";
+.ui.items>.item>.image+.content {
+    width:20%;
+    text-align: center;
+}
+.ui.items {
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .content {
+            width:20%;
+            text-align: center;
+        }
+        
+}
+
+}

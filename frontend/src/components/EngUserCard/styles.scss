@@ -1,0 +1,72 @@
+@import 'assets/_colors.scss';
+
+.ui.segment.user-profile {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-form {
+    font-size: 20px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ui.image.user-image {
+    margin: auto;
+    width: 10vw;
+    height: 10vw;
+    border: 1px black solid;
+    border-radius: 100%;
+}
+
+.ui.button.passwd-button {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid $gold;
+    font-size: 15px;
+    color: $dark-grey;
+    background-color: $white;
+    &:hover {
+        background-color: $gold;
+        color: $white;
+    }
+}
+
+.change-password-modal {
+    padding: 5vw;
+}
+
+.user-card {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-placeholder {
+    margin-left: 5vw;
+    width: 15vw;
+}
+
+@media all and (max-width: 992px) {
+    .ui.segment.user-profile {
+        width: 80vw;
+    }
+    .profile-form {
+        margin-right: 15%;
+    }
+    .ui.image.user-image {
+    width: 18vw;
+    height: 18vw;
+    }
+    .ui.button.passwd-button {
+    margin-left: 15px;
+    padding: 12px;
+    }
+    .ui.small.moda {
+        width: 90vw;
+    }
+}

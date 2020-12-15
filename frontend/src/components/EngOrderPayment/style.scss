@@ -1,0 +1,32 @@
+.content.list__header.list__content {
+  width: 20%;
+  .header {
+    margin: 3%;
+    font-size: 1.2em;
+  }
+}
+
+.info-item{
+  float: left;
+  clear: both;
+}
+
+.info-item.total{
+  width: 100%;
+  display: block;
+}
+
+.payment{
+  margin: 3% auto;
+}
+
+.dollar.sign{
+  float: initial;
+}
+
+
+@media all and (max-width: 992px) {
+  .content.list__header.list__content {
+    width: 100%;
+  }
+}

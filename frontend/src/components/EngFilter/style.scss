@@ -1,0 +1,26 @@
+@import 'assets/_colors.scss';
+
+.filter__item {
+    margin-right: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter__icon {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.filter__icon--orange {
+    color: $gold;
+}
+
+.filter__icon--purple {
+    color: $pink;
+}
+
+@media (min-width: 768px) {
+    .filter__item {
+        margin: 0 auto 20px;
+    }
+}

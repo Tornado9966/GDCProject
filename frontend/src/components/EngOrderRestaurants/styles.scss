@@ -1,0 +1,20 @@
+@import 'assets/_colors.scss';
+
+.ui.cards.eng-places {
+    margin: 0;
+}
+
+.ui.header.main-header {
+    margin: 40px 10%;
+    text-align: center;
+    color: $dark_grey;
+}
+
+.selected-card {
+    box-shadow: 0 0 30px #333;
+    margin: 5px 10px 20px 10px
+}
+
+.unselected-card {
+    margin: 5px 4px 20px 4px;
+}

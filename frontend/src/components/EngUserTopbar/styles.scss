@@ -1,0 +1,21 @@
+@import 'assets/_colors.scss';
+
+.ui {
+  &.modal-button {
+    background-color: $yellow;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid $yellow;
+
+    &:hover {
+      background-color: $yellow;
+      color: $dark_grey;
+      border: 1px solid $dark_grey;
+    }
+    &:active {
+      background-color: $dark_yellow;
+      color: #fff;
+      border: 1px solid $dark_yellow;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.ui.card {
+    .content.place-card {
+        .header.place-card-location {
+            text-align: center;
+            margin: 10px 0 15px;
+            font-size: 1.4vw;
+        }
+        .image.place-card-image{
+            width: 25.47vw;
+            max-height: 13vw;
+            overflow: hidden;
+        }
+        .meta.place-card-workingHours{
+            text-align: center;
+            font-size: 1vw;
+            margin-top: 15px;
+        }
+    }
+    .ui.buttons {
+        align-items: center;
+    }
+    .placeCard__order {
+        border: 1px solid #fbbd08;
+        background: #fff;
+        border-radius: 3px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .ui.card {
+        .content.place-card {
+            .header.place-card-location {
+                font-size: 4.4vw;
+            }
+            .image.place-card-image{
+                width: 100%;
+                max-height: 100%;
+                overflow: hidden;
+            }
+            .meta.place-card-workingHours{
+                font-size: 4vw;
+            }
+        }
+    }
+}

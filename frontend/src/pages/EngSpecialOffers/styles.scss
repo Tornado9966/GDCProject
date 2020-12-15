@@ -1,0 +1,134 @@
+@import 'assets/_colors.scss';
+
+.main__special {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.specialitem {
+    border-bottom: 1px solid $grey;
+    margin-bottom: 60px;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+        margin-top: 20px;
+    }
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    img {
+        &.image {
+            &.large {
+                width: 35vw;
+                margin: 0;
+            }
+        
+        }
+    }
+}
+
+.specialitem__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 1.5vw;
+        font-size: 1.6vw;
+    }
+
+    p {
+        font-size: 1vw;
+        line-height: 1.8vw;
+        margin-bottom: 1vw;
+
+        &.details-block {
+            &.hide {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: all 0.4s ease-out;
+                margin: 0;
+            }
+            &.show {
+                max-height: 500px;
+                opacity: 1;
+                overflow: hidden;
+                transition: all 0.4s ease-in;
+                margin: 0;
+            }
+        }
+    }
+
+    .specialitem__button {
+        width: 15vw;
+        border: 2px solid $button_color;
+        color:  $button_color;
+        background: transparent;
+        transition: all 0.3s linear;
+        margin-top: 20px;
+        box-shadow: none;
+    
+        &:hover, &:active, &:focus {
+            color: $white;
+            background: $button_color;
+            transition: all 0.3s linear;
+            box-shadow: none;
+        }
+    }
+
+}
+
+@media all and (max-width: 992px) {
+    .main__special {
+        margin: 1% auto;
+        width: 95%;
+    }
+    .specialitem {
+        flex-direction: column;
+        padding-bottom: 1%;
+        margin-bottom: 2%;
+        margin-top: 3%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        img {
+            &.image {
+                &.large {
+                    width: 60vw;
+                }
+            }
+        }
+    }
+    .specialitem__info {
+        width: 77%;
+        margin: 2% auto;
+        padding: 0;
+        h2 {
+            margin-top: 1.5vw;
+            font-size: 3.4vw;
+            text-align: center;
+        }
+        p {
+            font-size: 2.2vw;
+            line-height: 2.6vw;
+            text-align: justify;
+        }
+        .specialitem__button {
+            width: 17vw;
+            height: 7vw;
+            margin: 3% auto;
+            font-size: 2vw;
+        }
+
+    }
+}
+
+

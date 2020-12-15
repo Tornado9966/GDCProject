@@ -1,0 +1,37 @@
+@import "assets/_colors.scss";
+
+.ui {
+  &.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  &.register-header {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &.grid.register-center {
+    text-align: center;
+    margin: 5px 0px 15px 0; 
+  }
+  &.register-button {
+    background-color: $white;
+    font-size: 16px;
+    color: $yellow;
+    border: 2px solid $yellow;
+
+    &:hover {
+      background-color: $yellow;
+      color: #fff;
+    }
+    &:active {
+      background-color: $dark_yellow;
+      color: #fff;
+      border: 2px solid $dark_yellow;
+    }
+  }
+}

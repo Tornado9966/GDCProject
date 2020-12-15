@@ -1,0 +1,109 @@
+@import "assets/_colors.scss";
+
+.ui {
+  .dimmer {
+    background-color: rgba(255,255,255,.85);
+  }
+  &.login-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+    padding: 30px;
+
+    .login-container {
+      max-width: 400px;
+    }
+    .login-header {
+      color: $yellow;
+      text-align: center;
+      font-size: 24px;
+    }
+    .login-form {
+      font-size: 16px;
+    }
+  }
+  &.login-success {
+    background-color: $white;
+    font-size: 16px;
+    width: 100px;
+    color: $yellow;
+    border: 2px solid $yellow;
+
+    &:hover {
+      background-color: $yellow;
+      color: #fff;
+    }
+    &:active {
+      background-color: $dark_yellow;
+      color: #fff;
+      border: 2px solid $dark_yellow;
+    }
+  }
+
+  &.login-button {
+    background-color: $white;
+    font-size: 16px;
+    width: 60% !important;
+    color: $yellow;
+    border: 2px solid $yellow;
+
+    &:hover {
+      background-color: $yellow;
+      color: #fff;
+    }
+    &:active {
+      background-color: $dark_yellow;
+      color: #fff;
+      border: 2px solid $dark_yellow;
+    }
+  }
+}
+.socials-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-google {
+  margin: 0 0 0 5px;
+}
+.socials-facebook {
+  margin: 0 5px 0 0;
+  width: 60%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+div.socials-facebook > div > span > button {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+.kep-login-facebook {
+  width: 100%;
+  line-height: 17px;
+}
+.socials-google > div > button{
+  height: 44px;
+}
+.socials-google > div > button > div{
+  padding: 7px !important;
+}
+
+.socials-google > div > button > span {
+  padding: 8px 10px 3px 0px !important;
+}
+.login-password {
+  padding: 0 0 1em 0;
+
+  .forgot-password {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.ui.stacked.segment { 
+  &:before, &:after {
+      display: none;
+  }
+}

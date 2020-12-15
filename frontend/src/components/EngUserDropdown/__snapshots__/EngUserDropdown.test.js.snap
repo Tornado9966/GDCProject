@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EngUserDropdown matches the snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserDropdown renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserDropdown should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserDropdown should render correctly with boolean prop 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserDropdown should render correctly with no props 1`] = `ShallowWrapper {}`;

@@ -1,0 +1,72 @@
+@import '../../assets/colors';
+
+.menu__title {
+    padding: 50px 0;
+    font-size: 21px;
+    background-color: $grey;
+    color: $white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu__mainblock {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.menu__filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.menu__items--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.menu__sort {
+    position: absolute;
+    right: 30px;
+}
+
+.menu__button--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ui {
+    &.menu__button {
+        background-color: $gold;
+        color: $white;
+        margin: 30px auto 60px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .menu__mainblock {
+        flex-direction: column;
+    }
+
+    .menu__filter {
+        div:not(.filter__item) {
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+    .menu__items--wrapper {
+        & > a {
+            margin-left: 30px;
+        }
+    }
+}

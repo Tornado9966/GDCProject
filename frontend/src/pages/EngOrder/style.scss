@@ -1,0 +1,18 @@
+@import 'assets/_colors.scss';
+
+.steps-btns{
+  text-align: center;
+  clear: both;
+  margin-bottom: 2%;
+  margin-top: 5%;
+
+  .button.next{
+    color: $white;
+    background-color: $light_green;
+  }
+
+  .button.previous{
+    color: $white;
+    background-color: $orange;
+  }
+}

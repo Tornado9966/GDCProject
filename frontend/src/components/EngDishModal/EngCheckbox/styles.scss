@@ -1,0 +1,8 @@
+.modal-checkbox {
+    &.visible{
+        visibility: visible;
+    }
+    &.hidden{
+        visibility: hidden;
+    }
+}

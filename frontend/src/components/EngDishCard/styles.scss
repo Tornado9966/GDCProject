@@ -1,0 +1,53 @@
+@import 'assets/_colors.scss';
+
+.ui.three.cards>.card {
+    min-width: 280px;
+    max-width: 300px;
+}
+
+.ui.eng-dishes.cards {
+    .dish-card-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .dish-card-content {
+        text-align: center; 
+    }
+
+    .dish-card-price {
+        font-size: 20px;
+        padding-top: 10px;
+        color: $gold;
+    }
+
+    .dish-card-rating {
+        padding: 10px;
+        color: $gold;
+    }
+
+    .content.extra.dish-card-extra {
+        padding-right: 30px;
+        padding-left: 40px;
+
+        .navigation-button {
+            border: 1px solid $gold;
+            background: $white;
+            a {
+                color: $dark_grey;
+            }
+            &:hover {
+                background: $gold;
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .dish-card {
+        &.selected {
+            box-shadow: 2px 2px 70px 0px $shadow_black;
+        }
+    }
+}
+

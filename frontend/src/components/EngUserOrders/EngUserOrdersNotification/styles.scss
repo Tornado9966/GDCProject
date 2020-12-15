@@ -1,0 +1,28 @@
+@import "assets/_colors.scss";
+
+.ui.placeholder.segment {
+    height: calc(100vh - 215px);
+}
+.ui button  {
+    &.emptyOrder-button{
+    background-color: $yellow;
+    font-size: 16px;
+    width: 60% !important;
+    color: $yellow;
+    border: 2px solid $yellow;
+
+        &:hover {
+            background-color: $dark_yellow;
+            color: $shadow_black;
+        }
+        &:active {
+            background-color: $dark_yellow;
+            color: $white;
+            border: 2px solid $dark_yellow;
+        }
+
+        &.emptyOrder-button a {
+            color: $white;
+        }
+    }
+  }

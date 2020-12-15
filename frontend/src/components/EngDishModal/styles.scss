@@ -1,0 +1,49 @@
+@import 'assets/_colors.scss';
+
+@keyframes image {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.ui.checkbox.modal-checkbox {
+    display: block;
+    margin: 20px;
+}
+
+.modal-description {
+   display: flex;
+}
+
+.ui.modal {
+    text-align: center;
+
+    .modal-content {
+        padding-left: 0;
+    }
+
+    .header.modal-header {
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    .modal-description-header {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .modal-image {
+        animation: image 1s;
+    }
+
+    .navigation-button {
+        border: 1px solid $gold;
+        background: $white;
+        color: $dark_grey;
+        a, a:hover {
+            color: $dark_grey;
+        }
+        &:hover {
+            background: $gold;
+        }
+    }
+}

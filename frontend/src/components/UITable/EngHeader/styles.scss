@@ -1,0 +1,93 @@
+@import 'assets/_colors.scss';
+
+header {
+    background-color:$light_grey;
+    .ui.menu {
+        a.item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .items__icon {
+            width: 32%;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+@media all and (max-width: 992px) {
+    header {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        .ui.menu.seven {
+            justify-content: flex-end;
+            margin-top: 0;
+            .item {
+                &.logo {
+                    width: 30%;
+                    .ui.medium.image {
+                        width: 150px;
+                    }
+                }
+                &.login__button {
+                    width: 37%;
+                    float: right;
+                    justify-content: flex-end;
+                    margin-right: 20px;
+                }
+            }
+        }
+        
+        .ui.menu {
+            &.menu__burger {
+                background: none;
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                min-height: 30px;
+                position: absolute;
+                margin: 0;
+                top: 50%;
+                left: 20px;
+                transform: translate(0%, -50%);
+                &.icon {
+                    font-size: 30px;
+                }
+            } 
+        }
+        .pushable {
+            overflow-x: visible;
+        }
+        .pusher {
+            position: absolute;
+            z-index: 99;
+            width: 100%;
+            background: #ddd;
+            top: 87px;
+            padding: 20px 0;
+            &.hide {
+                display: none;
+            }
+            &.show {
+                display: block;
+            }
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 20px;
+                color: #000;
+                margin-bottom: 12px;
+                padding-left: 30px;
+                .items__icon {
+                    width: 10%;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

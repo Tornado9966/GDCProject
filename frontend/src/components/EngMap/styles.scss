@@ -1,0 +1,88 @@
+@import 'assets/_colors.scss';
+
+.info-wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: $gold;
+    color: $white;
+}
+
+.map-content-wrapper { 
+    width: 80%;
+    height: 70%; 
+    margin: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    overflow: hidden;
+}
+
+.map-content-wrapper.details-wrapper {
+    overflow-y: scroll;
+    width: 40%;
+    box-shadow: none;
+}
+
+.single-restaurant-wrapper {
+    overflow: hidden;
+    .ui.button {
+        height: 250px;
+        background-size: cover;
+        filter: grayscale(100%);
+        transform: scale(1.05);
+        transition: all .3s linear;
+        color: transparent;
+        &:hover {
+            filter: none;
+            color: $white;
+            transform: scale(1.2);
+            transition: all .3s linear;
+        }
+    }
+}
+
+.ui.grid {
+    .column {
+        &.restaurants__list {
+            width: 30%;
+        }
+        &.restaurants__map {
+            width: 70%;
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .ui.grid {
+        .column {
+            &.restaurants__list {
+                width: 100%;
+            }
+            &.restaurants__map {
+                width: 100%;
+            }
+        }
+    }
+
+    .map-content-wrapper { 
+        width: 100%;
+        height: 400px; 
+        margin: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        overflow: hidden;
+        & > div > div {
+            width: 100%!important;
+            margin: 0!important;
+        }
+        &.details-wrapper {
+            width: 100%;
+            &.not-active {
+                display: none;
+            }
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+    

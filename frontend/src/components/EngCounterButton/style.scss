@@ -1,0 +1,14 @@
+@import 'assets/_colors.scss';
+
+.button.minus-button,
+.button.plus-button {
+        background: transparent;
+        transition: all 0.3s linear;
+        
+        &:hover, &:active, &:focus {
+            background: transparent;
+            color: $gold;
+            transition: all 0.3s linear;
+            border-color: $gold;
+        }
+    }    

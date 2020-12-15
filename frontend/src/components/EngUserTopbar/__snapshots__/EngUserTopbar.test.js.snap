@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EngLoginForm matches the snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserTopbar matches the snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserTopbar should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserTopbar should render correctly with boolean prop 1`] = `ShallowWrapper {}`;
+
+exports[`EngUserTopbar should render correctly with no props 1`] = `ShallowWrapper {}`;

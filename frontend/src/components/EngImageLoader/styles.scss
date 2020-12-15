@@ -1,0 +1,33 @@
+@import 'assets/_colors.scss';
+
+.ui.button {
+    &.loader-icon, &.save-icon, &.x-icon {
+        margin-left: 10px;
+        margin: 5px;
+        background-color: $white;
+        &:hover{
+            box-shadow: 0 0 0 1px $dark-grey;
+            color: $white;
+        }
+    }
+    &.loader-icon:hover {
+        background-color: $gold;
+    }
+    &.save-icon:hover {
+        background-color: $green;
+    }
+    &.x-icon:hover {
+        background-color: $red;
+    }
+    color: $dark-grey;
+}
+
+.load-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.ui.progress.image-loader-progress{
+    width: 20vw;
+    margin: 20px;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EngPlaceCard should render correctly 1`] = `ShallowWrapper {}`;
+
+exports[`EngPlaceCard should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;
+
+exports[`EngPlaceCard should render correctly in "debug" mode 2`] = `ShallowWrapper {}`;
+
+exports[`EngPlaceCard should render correctly in "debug" mode 3`] = `ShallowWrapper {}`;
+
+exports[`Registration component renders correctly 1`] = `ShallowWrapper {}`;

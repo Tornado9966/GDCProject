@@ -1,0 +1,18 @@
+.main-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+main {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+@media all and (max-width: 992px) {
+    main {
+        margin-bottom: 160px;
+        margin-top: 87px;
+    }
+}

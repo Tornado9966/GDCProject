@@ -1,0 +1,41 @@
+@import 'assets/_colors.scss';
+
+.ui.modal {
+    .ui.form.change-passwd-form {
+        box-shadow: 0 1px 2px 0 $bright_grey;
+        border-radius: .3rem;
+        border: 1px solid $bright_grey;
+    }
+}
+.ui.form.change-passwd-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    padding: 2vw;
+    border: 1px solid $grey;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.ui.header.change-password {
+    color: $gold;
+}
+
+.ui.label.input-error {
+    text-align: center;
+    border: 1px solid $red;
+    background-color: $white;
+}
+
+@media all and (max-width: 992px) {
+    .ui.form.change-passwd-form {
+        width: 75vw;
+        padding: 10vw;
+        .password__input {
+            width: 60vw;
+            font-size: 11px;
+            margin-bottom: 15px;
+        }
+    }
+}

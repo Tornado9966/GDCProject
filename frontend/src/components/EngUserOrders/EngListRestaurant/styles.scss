@@ -1,0 +1,135 @@
+@import "assets/_colors.scss";
+
+.myOrderList {
+    margin: 5% 10%;
+    display: block;
+
+    .myOrder {
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+        border-bottom: 1px solid #ccc;
+    }
+    
+}
+.myOrder__number {
+    font-size: 20px;
+    font-weight: bold;
+}
+.myOrder__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img{
+        width:25%;
+    }
+
+    .list{
+        .item {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    }
+
+    .myOrder__status {
+        width: 18%;
+        .header {
+            text-align: center;
+            font-size: 16px;
+        }
+        .button {
+            width: 100%;
+            
+
+            &.button__done {
+                background: $green;
+                .icon {
+                    color: $white;
+                    opacity: 1;
+                }
+                .label{
+                    color: $white;
+                    background: $green;
+                    font-size: 16px;
+                    padding: 0;
+                }
+            }
+            &.button__cancel {
+                background: $red;
+                .icon {
+                    color:#fff;
+                    opacity: 1;
+                }
+                .label{
+                    color: #fff;
+                    background: $red;
+                    font-size: 16px;
+                    padding: 0;
+                }
+            }
+            &.button__pendding {
+                background: $yellow;
+                .icon {
+                    color:#fff;
+                    opacity: 1;
+                }
+                .label{
+                    color: #fff;
+                    background: $yellow;
+                    font-size: 16px;
+                    padding: 0;
+                }
+            }
+            &.button__done:hover {
+                cursor: default
+            }
+            &.button__pendding:hover {
+                cursor: default
+            }
+            &.button__cancel:hover {
+                cursor: default
+            }
+        }
+    }
+    .myOrder__details {
+        background: none;
+        text-decoration: underline;
+        color: $dark_grey;
+    }
+    .myOrder__details:hover {
+        background: none;
+        color:$yellow
+    }
+}
+
+@media all and (max-width: 992px) { 
+    .myOrder__info {
+        flex-direction: column;
+        img.ui.image {
+            display: none;
+        }
+        
+        .myOrder__status {
+            display: flex;
+            justify-content: center;
+            .header {
+                margin-right: 20%;
+            }
+
+            button.button__done {             
+                width: 50vw;
+                height: 6vh;
+                .icon {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+    .myOrder__number {
+    margin-bottom: 1%;
+    text-align: center;
+    }
+}

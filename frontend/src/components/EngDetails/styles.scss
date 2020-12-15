@@ -1,0 +1,31 @@
+@import 'assets/_colors.scss';
+
+.details-container {
+    width: 100%;
+    min-height: 100%;
+    padding: 10px 20px 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: $gold;
+    background-color: $white;
+    text-align: center;
+
+    .ui.button {
+        background-color: $gold;
+        color: $white;
+        border: 2px solid transparent;
+        &:hover {
+            background-color: $white;
+            color: $gold;
+            border: 2px solid $gold;
+        }
+        &:focus {
+            background-color: $grey;
+            color: $white;
+            border: 2px solid transparent; 
+        }
+    }
+}
+
+pre {
+    display: inline;
+}

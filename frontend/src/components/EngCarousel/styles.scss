@@ -1,0 +1,18 @@
+.carousel-wrapper {
+    margin: 0 auto 50px auto;
+    width: 100%;
+}
+
+.controllers {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    &:hover {
+        background: rgba(0, 0,0,0.5);
+    }
+    i.icon {
+        margin: 0;
+    }
+}

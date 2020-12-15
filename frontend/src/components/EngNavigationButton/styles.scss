@@ -1,0 +1,18 @@
+@import 'assets/_colors.scss';
+
+.button-wrapper {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui.navigation-button, .ui.navigation-button:hover {
+    background: $gold;
+    padding: 15px;
+    a {
+        color: $white;
+    }
+}
